@@ -37,7 +37,7 @@ class VideoPlayer extends Component {
         >
           <FormattedMessage id="video" />
         </h2>
-        <Player playsInline poster={this.state.videoSrc} src={this.state.video} />
+        <Player playsInline poster={this.props.data.videoSrc} src={this.props.data.video} />
       </div>
     );
   }
