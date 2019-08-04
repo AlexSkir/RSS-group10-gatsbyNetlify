@@ -14,6 +14,15 @@ class VideoPlayer extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProp) {
+    if (nextProp.data.videoSrc !== this.state.videoSrc) {
+      this.setState({ videoSrc: nextProp.data.videoSrc })
+    }
+    if (nextProp.data.video !== this.state.video) {
+      this.setState({ video: nextProp.data.video })
+    }
+  }
+
   render() {
     return (
       <div id="videoPlayer" className="videoPlayer">

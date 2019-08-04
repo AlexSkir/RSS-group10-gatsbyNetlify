@@ -26,6 +26,22 @@ class ImageGalleryComponent extends Component {
     this.setState({ images: this.images });
   }
 
+  componentWillReceiveProps(nextProp) {
+    nextProp.data.works.forEach(item => {
+      if (this.state.images.indexOf(item) === -1) {
+        nextProp.data.works.forEach((item) => {
+          const obj = {
+            original: item.image,
+            thumbnail: item.image,
+            description: item.description,
+          };
+          this.images.push(obj);
+        });
+        this.setState({ images: this.images });
+      }
+    });
+  }
+
   render() {
     return (
       <div id="imageGalleryComponent" >

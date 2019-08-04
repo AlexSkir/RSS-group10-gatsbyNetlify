@@ -35,6 +35,7 @@ class MainPage extends Component {
 
   componentWillMount() {
     const day = new Date().toISOString().substring(0, 10).split('-')[2] % 8;
+    console.log(day)
     this.setState({ profile: this.data[day], authorDay: day })
   }
 
