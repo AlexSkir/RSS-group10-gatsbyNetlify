@@ -14,10 +14,7 @@ import Slide9 from '../../img/assets/slider/9.jpg';
 import Slide10 from '../../img/assets/slider/10.jpg';
 import Slide11 from '../../img/assets/slider/11.jpg';
 import Slide12 from '../../img/assets/slider/12.jpg';
-import Slide13 from '../../img/assets/slider/13.jpg';
-import Slide14 from '../../img/assets/slider/14.jpg';
-import Slide15 from '../../img/assets/slider/15.jpg';
-import Slide16 from '../../img/assets/slider/16.jpg';
+
 
 export default function SimpleSlider() {
   const settings = {
@@ -67,19 +64,7 @@ export default function SimpleSlider() {
       </div>
       <div>
         <img src={`${Slide12}`} alt="slide" />
-      </div>
-      <div>
-        <img src={`${Slide13}`} alt="slide" />
-      </div>
-      <div>
-        <img src={`${Slide14}`} alt="slide" />
-      </div>
-      <div>
-        <img src={`${Slide15}`} alt="slide" />
-      </div>
-      <div>
-        <img src={`${Slide16}`} alt="slide" />
-      </div>
+      </div>      
     </Slider>
   );
 }
