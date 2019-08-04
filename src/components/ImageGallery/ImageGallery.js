@@ -9,7 +9,8 @@ class ImageGalleryComponent extends Component {
     super(props);
     this.state = {
       works: '',
-      images: ''
+      images: '',
+      src: ''
     }
     this.images = [];
     this.works = props.data.works
@@ -24,11 +25,11 @@ class ImageGalleryComponent extends Component {
       };
       this.images.push(obj);
     });
-    this.setState({ images: this.images });
+    this.setState({ images: this.images, src: this.props.src });
   }
 
   componentWillReceiveProps(nextProp) {
-    if (nextProp.src !== this.works[0].original) {
+    if (nextProp.src !== this.state.src) {
       this.images = [];
       nextProp.data.works.forEach((item) => {
         const obj = {
