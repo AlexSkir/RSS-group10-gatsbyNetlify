@@ -9,6 +9,8 @@
   left: 0;
   right: 0;
   z-index: 1;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .main-page-title p {
@@ -34,13 +36,15 @@
 .mainpage-navigation-container {
   position: absolute;
   z-index: 10;
-  bottom: 0;
-  left: 0; right: 0;
+  bottom: -10px;
+  left: 10px; right: 10px;
   height: 50px;
   display: flex;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, .6);
   border-top: 1px solid #000;
+  height: 60px;
+  overflow: hidden;
 }
 
 .mainpage-navigation-container a {
@@ -68,7 +72,7 @@
   box-sizing: border-box;
   padding-top: 9vh;
   min-height: calc(100vh - 60px);
-  width: 100%;
+  width: 100% !important;
   max-width: 1206px;
   margin: auto;
 }
@@ -94,14 +98,34 @@
 }
 
 .main-page .avatar-container {
-  margin: 80px auto 10px;
-  width: 400px;
-  height: 400px;
+  margin: 50px 0 10px;
+  width: 393px !important;
+  height: 393px !important;
+  margin-right: 80px;
+}
+
+.main-page .author-day-button {
+  margin-left: -57px;
+}
+
+
+.main-page .avatar-container img {
+  border-radius: 4px;
+  width: 393px !important;
+  height: 393px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+.main-page .description {
+  padding-left: 0px;
+  padding-top: 40px;
 }
 
 .main-page .description h1 {
   font-size: 32px;
 }
+
+
 
 .title-author-day {
   margin: 20px auto;
@@ -189,9 +213,10 @@
     margin: 40px auto 0;
   }
 
-  .author-day-button {
+  .main-page .author-day-button {
     padding-left: 0;
     justify-content: center;
+    margin-left: 0px;
   }
 
   .author-day {

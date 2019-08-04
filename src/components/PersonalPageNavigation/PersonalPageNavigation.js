@@ -11,14 +11,14 @@ import LocationOn from '@material-ui/icons/LocationOn';
 
 export default class PersonalPageNavigation extends Component {
   state = {
-    top: '64px',
+    top: '70px',
   }
 
   listenScrollEvent = () => {
-    if (window.scrollY > 67) {
+    if (window.scrollY > 70) {
       this.setState({ top: '0px' });
     } else {
-      this.setState({ top: '64px' });
+      this.setState({ top: '70px' });
     }
   }
 
