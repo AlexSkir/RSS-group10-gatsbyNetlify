@@ -16,6 +16,7 @@ class Avatar extends Component {
   }
 
   componentWillReceiveProps(nextProp) {
+    console.log(nextProp.data.avatar)
     if (nextProp.data.avatar !== this.state.avatar) {
       this.setState({ avatar: nextProp.data.avatar })
     }
