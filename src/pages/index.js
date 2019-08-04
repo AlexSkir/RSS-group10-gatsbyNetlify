@@ -82,7 +82,7 @@ class MainPage extends Component {
                 <FormattedMessage id="todayAuthor" />
               </h2>
               <Grid className="avatar-description">
-                <div>
+                <div className="datepicker-container">
                   <Avatar data={this.state.profile} />
                   <DatePickers onChange={e => this.onChange(e)} />
                 </div>

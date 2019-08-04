@@ -144,7 +144,7 @@ export default [
         description: 'He died of a stroke in Minsk.',
       },
     ],
-    works: [{ image: slide1, description: 'The work of the exhibition «Under Ground», 2011. M.V. Anempodistov explained that Belarusians, as well as vegetables, hide the most interesting things inside. Outside, they usually look like potatoes smeared in the ground, and inside under the peel is the “golden sun”.' },
+    works: [{ image: slide1, description: 'The work of the exhibition «Under Ground», 2011.' },
     { image: slide2, description: 'The work of the exhibition «Under Ground», 2011' },
     { image: slide3, description: 'The work of the exhibition «Under Ground», 2011' },
     { image: slide4, description: 'The work of the exhibition «Under Ground», 2011' },
@@ -154,7 +154,7 @@ export default [
       {
         year: '2011',
         work:
-          'Photo exhibition “Under Ground”: in photos focused on Belarusian vegetables. The choice of topics was explained by the fact that Belarusians, like vegetables, hide interesting things in themselves, do not show them outside - a nation of people buried in themselves: they usually look, but inside they are fantastic - the golden sun is hidden under the skin of potatoes, soiled (from the soil)',
+          'Photo exhibition “Under Ground”',
       },
       {
         year: '2012',
@@ -396,12 +396,7 @@ export default [
     { image: slide16, description: 'Silence' },
     { image: slide17, description: 'Devastation' },
     { image: slide18, description: 'Over eternal peace' }],
-    listOfWorks: [
-      {
-        year: '1997',
-        work:
-          '"Alone in the city." Museum of the Belarusian State Academy of Arts, Minsk ',
-      },
+    listOfWorks: [      
       {
         year: '1997',
         work:
@@ -440,10 +435,10 @@ export default [
   },
 
   {
-    id: 5,
+    id: 7,
     name: 'Jan Bulhak',
     avatar: avatar7,
-    occupation: 'Ethnographer, folklorist, writer, photographer',
+    occupation: 'Belarusian and polish photographer, "the father of holish photography", one of the pioneers of art photography.',
     birthDate: '06.10.1876',
     birthPlace: 'Ostashino, Novogrudok',
     deathDate: '04.02.1950',
@@ -531,7 +526,7 @@ export default [
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: 'Lev Urbanovich Dashkevich',
     avatar: avatar4,
     occupation:
@@ -633,7 +628,7 @@ export default [
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: 'Georgii Leonardovich Likhtarovich',
     avatar: avatar5,
     occupation: 'Belarusian photographer, talented writer, poet, public figure',
