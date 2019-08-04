@@ -19,12 +19,8 @@ class VideoPlayer extends Component {
   }
 
   componentWillReceiveProps(nextProp) {
-    console.log('next: ', nextProp.data.videoSrc, 'now: ', this.state.videoSrc)
-    if (nextProp.data.videoSrc !== this.state.videoSrc) {
-      this.setState({ videoSrc: nextProp.data.videoSrc })
-    }
-    if (nextProp.data.video !== this.state.video) {
-      this.setState({ video: nextProp.data.video })
+    if (nextProp.src !== this.state.videoSrc) {
+      this.setState({ videoSrc: nextProp.data.videoSrc, video: nextProp.data.video })
     }
   }
 
@@ -48,6 +44,7 @@ class VideoPlayer extends Component {
 
 VideoPlayer.propTypes = {
   data: PropTypes.object.isRequired,
+  src: PropTypes.string.isRequired
 };
 
 export default VideoPlayer;

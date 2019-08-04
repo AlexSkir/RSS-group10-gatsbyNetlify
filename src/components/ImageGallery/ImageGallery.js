@@ -28,7 +28,7 @@ class ImageGalleryComponent extends Component {
   }
 
   componentWillReceiveProps(nextProp) {
-    if (nextProp.data.works[0].original !== this.works[0].original) {
+    if (nextProp.src !== this.works[0].original) {
       this.images = [];
       nextProp.data.works.forEach((item) => {
         const obj = {
@@ -58,6 +58,7 @@ class ImageGalleryComponent extends Component {
 
 ImageGalleryComponent.propTypes = {
   data: PropTypes.object.isRequired,
+  src: PropTypes.string.isRequired
 };
 
 export default ImageGalleryComponent;

@@ -42,8 +42,8 @@ class PersonalPage extends Component {
           <Description data={this.state.profile} id="description" />
           <Timeline data={this.state.profile} />
           <ListOfWorks data={this.state.profile} />
-          <ImageGalleryComponent data={this.state.profile} />
-          <VideoPlayer data={this.state.profile} />
+          <ImageGalleryComponent src={this.state.profile.works[0].image} data={this.state.profile} />
+          <VideoPlayer src={this.state.profile.videoSrc} data={this.state.profile} />
           <ModalVideo data={this.state.profile} />
           <MapContainer data={this.state.profile} />
         </div>
