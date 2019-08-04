@@ -19,6 +19,7 @@ class VideoPlayer extends Component {
   }
 
   componentWillReceiveProps(nextProp) {
+    console.log('next: ', nextProp.data.videoSrc, 'now: ', this.state.videoSrc)
     if (nextProp.data.videoSrc !== this.state.videoSrc) {
       this.setState({ videoSrc: nextProp.data.videoSrc })
     }

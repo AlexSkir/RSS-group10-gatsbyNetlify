@@ -8,14 +8,15 @@ class ImageGalleryComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      works: props.data.works,
+      works: '',
       images: ''
     }
     this.images = [];
+    this.works = props.data.works
   }
 
   componentWillMount() {
-    this.state.works.forEach((item) => {
+    this.works.forEach((item) => {
       const obj = {
         original: item.image,
         thumbnail: item.image,
@@ -27,8 +28,8 @@ class ImageGalleryComponent extends Component {
   }
 
   componentWillReceiveProps(nextProp) {
-    if (nextProp.data.works !== this.state.works) {
-      this.images = '';
+    if (nextProp.data.works[0].original !== this.works[0].original) {
+      this.images = [];
       nextProp.data.works.forEach((item) => {
         const obj = {
           original: item.image,
