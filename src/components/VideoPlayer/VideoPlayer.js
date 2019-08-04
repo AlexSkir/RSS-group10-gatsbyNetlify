@@ -9,9 +9,13 @@ class VideoPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videoSrc: props.data.videoSrc,
-      video: props.data.video
+      videoSrc: '',
+      video: ''
     }
+  }
+
+  componentWillMount() {
+    this.setState({ videoSrc: this.props.data.videoSrc, video: this.props.data.video })
   }
 
   componentWillReceiveProps(nextProp) {

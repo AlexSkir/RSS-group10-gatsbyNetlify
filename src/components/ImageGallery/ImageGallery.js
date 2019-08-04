@@ -27,19 +27,18 @@ class ImageGalleryComponent extends Component {
   }
 
   componentWillReceiveProps(nextProp) {
-    nextProp.data.works.forEach(item => {
-      if (this.state.images.indexOf(item) === -1) {
-        nextProp.data.works.forEach((item) => {
-          const obj = {
-            original: item.image,
-            thumbnail: item.image,
-            description: item.description,
-          };
-          this.images.push(obj);
-        });
-        this.setState({ images: this.images });
-      }
-    });
+    if (nextProp.data.works !== this.state.works) {
+      this.images = '';
+      nextProp.data.works.forEach((item) => {
+        const obj = {
+          original: item.image,
+          thumbnail: item.image,
+          description: item.description,
+        };
+        this.images.push(obj);
+      });
+      this.setState({ images: this.images });
+    }
   }
 
   render() {
