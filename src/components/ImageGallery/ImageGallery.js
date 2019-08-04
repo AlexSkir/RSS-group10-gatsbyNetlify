@@ -12,34 +12,36 @@ class ImageGalleryComponent extends Component {
       images: '',
       src: ''
     }
-    this.images = [];
     this.works = props.data.works
   }
 
   componentWillMount() {
+    const images = []
     this.works.forEach((item) => {
       const obj = {
         original: item.image,
         thumbnail: item.image,
         description: item.description,
       };
-      this.images.push(obj);
+      images.push(obj);
     });
-    this.setState({ images: this.images, src: this.props.src });
+    this.setState({ images: images, src: this.props.src, works: this.works });
   }
 
   componentWillReceiveProps(nextProp) {
+    console.log(nextProp)
     if (nextProp.src !== this.state.src) {
-      this.images = [];
+      const images = [];
       nextProp.data.works.forEach((item) => {
         const obj = {
           original: item.image,
           thumbnail: item.image,
           description: item.description,
         };
-        this.images.push(obj);
+        images.push(obj);
       });
-      this.setState({ images: this.images });
+      this.setState({ images: images });
+      this.works = nextProp.data.works;
     }
   }
 
