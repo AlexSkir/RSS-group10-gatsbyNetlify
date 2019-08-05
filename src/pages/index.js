@@ -34,8 +34,7 @@ class MainPage extends Component {
   }
 
   componentWillMount() {
-    const day = new Date().toISOString().substring(0, 10).split('-')[2] % 8;
-    console.log(day)
+    const day = this.getDay().split('-')[2] % 8;
     this.setState({ profile: this.data[day], authorDay: day })
   }
 
@@ -43,9 +42,16 @@ class MainPage extends Component {
     this.setState(null)
   }
 
+  getDay() {
+    const date = new Date();
+    const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
+    const month = date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${year}-${month}-${day}`;
+  }
+
   onChange(event) {
-    const day = event.target.value.split('-')[2] % 8;
-    console.log(day)
+    const day = event.target.value.split('-')[2] % 8 || this.getDay().split('-')[2] % 8;
     this.setState({ day, authorDay: day, profile: this.data[day] });
   }
 

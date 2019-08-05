@@ -10,7 +10,6 @@ class ImageGalleryComponent extends Component {
     this.state = {
       works: '',
       images: '',
-      src: ''
     }
     this.works = props.data.works
   }
@@ -25,24 +24,21 @@ class ImageGalleryComponent extends Component {
       };
       images.push(obj);
     });
-    this.setState({ images: images, src: this.props.src, works: this.works });
+    this.setState({ images: images, works: this.works });
   }
 
   componentWillReceiveProps(nextProp) {
-    console.log(nextProp)
-    if (nextProp.src !== this.state.src) {
-      const images = [];
-      nextProp.data.works.forEach((item) => {
-        const obj = {
-          original: item.image,
-          thumbnail: item.image,
-          description: item.description,
-        };
-        images.push(obj);
-      });
-      this.setState({ images: images });
-      this.works = nextProp.data.works;
+    const newImages = [];
+    for (let i = 0; i < nextProp.works.length; i++) {
+      const obj = {
+        original: this.state.works.map(item => item.image === nextProp.works[i].image ? item.image : nextProp.works[i].image),
+        thumbnail: this.state.works.map(item => item.image === nextProp.works[i].image ? item.image : nextProp.works[i].image),
+        description: this.state.works.map(item => item.description === nextProp.works[i].description ? item.description : nextProp.works[i].imdescriptionge),
+      };
+      newImages.push(obj);
     }
+    this.setState({ images: newImages });
+    this.works = nextProp.data.works;
   }
 
   render() {
@@ -60,8 +56,7 @@ class ImageGalleryComponent extends Component {
 }
 
 ImageGalleryComponent.propTypes = {
-  data: PropTypes.object.isRequired,
-  src: PropTypes.string.isRequired
+  data: PropTypes.object.isRequired
 };
 
 export default ImageGalleryComponent;
