@@ -7,6 +7,7 @@
   background-color: rgba(255, 255, 255, .6);
   border-radius: 4px;
   margin: 0;
+  width: auto;
 }
 
 .mainpage-navigation a {
@@ -35,11 +36,10 @@
   box-shadow: none !important;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1100px) {
   .mainpage-navigation {
-    right: 0px;
-    left: 50%;
-    margin-left: -120px;
+    right: calc(50% - 120px) !important;
+    left: calc(50% - 120px) !important;
+    margin: 0 !important;
   }
 }
-

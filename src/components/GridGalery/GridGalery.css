@@ -13,3 +13,10 @@
   color: #fff !important;
   background-color: transparent !important;
 }
+
+@media (max-width: 570px) {
+  .ReactGridGallery {
+    min-height: 1815px;
+  }
+}
+

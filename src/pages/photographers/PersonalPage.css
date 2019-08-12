@@ -5,9 +5,9 @@
 }
 
 .personal-page .avatar-container {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  margin: 80px auto 10px;
+  margin: 20px auto;
+  margin-top: 105px;
+
 }
 
 .personal-page .description h1 {
@@ -23,5 +23,23 @@
 
 .personal-page .avatar-container img {
   width: 100%;
-  border-radius: 170px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+.personal-page .timeline-container,
+.personal-page .listOfWorks,
+.personal-page .imageGallery,
+.personal-page .videoPlayer {
+  border-top: 1px solid transparent;
+}
+
+.personal-page .listOfWorks {
+  padding-bottom: 20px;
+}
+
+.ModalVideo+div {
+  height: 60px;
+  margin-top: 145px;
+  margin-bottom: -150px;
 }

@@ -37,14 +37,14 @@ export default class PersonalPageNavigation extends Component {
         <Button variant="contained" className="btn-navigation">
           <AnchorLink
             offset='200'
-            href='#avatar'
+            href='#personal-page'
           >
             <Person />
           </AnchorLink>
         </Button>
         <Button variant="contained" className="btn-navigation">
           <AnchorLink
-            offset='40'
+            offset='80'
             href='#timeline'
           >
             <Event />
@@ -52,7 +52,7 @@ export default class PersonalPageNavigation extends Component {
         </Button>
         <Button variant="contained" className="btn-navigation">
           <AnchorLink
-            offset='40'
+            offset='80'
             href='#listOfWorks'
           >
             <ViewList />
@@ -60,7 +60,7 @@ export default class PersonalPageNavigation extends Component {
         </Button>
         <Button variant="contained" className="btn-navigation">
           <AnchorLink
-            offset='20'
+            offset='80'
             href='#imageGalleryComponent'
           >
             <Photo />
