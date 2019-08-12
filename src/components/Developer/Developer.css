@@ -4,21 +4,13 @@
 }
 
 .developer-container img {
-  height: 200px;
-  width: 200px;
+  height: 195px;
+  width: 195px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin: 20px;
   transition: .5s;
   justify-content: space-between;
-}
-
-.developer-container:first-child img {
-  margin-left: 0;
-}
-
-.developer-container:last-child img {
-  margin-right: 0;
 }
 
 .developer-container:first-child img {

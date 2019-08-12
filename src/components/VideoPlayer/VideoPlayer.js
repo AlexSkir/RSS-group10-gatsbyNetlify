@@ -21,7 +21,7 @@ class VideoPlayer extends Component {
           style={{
             textAlign: 'center',
             fontSize: '44px',
-            marginTop: 60,
+            marginTop: 40,
           }}
         >
           <FormattedMessage id="video" />

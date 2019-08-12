@@ -19,7 +19,7 @@ class GridGallery extends React.Component {
     this.IMAGES = [{
       src: Slide1,
       thumbnail: Slide1,
-      thumbnailWidth: 603,
+      thumbnailWidth: 630,
       thumbnailHeight: 300,
       caption: `${messages[this.props.lang].caption1}, ${messages[this.props.lang].name2}`,
       tags: [{
@@ -30,7 +30,7 @@ class GridGallery extends React.Component {
     {
       src: Slide2,
       thumbnail: Slide2,
-      thumbnailWidth: 603,
+      thumbnailWidth: 580,
       thumbnailHeight: 300,
       caption: `${messages[this.props.lang].caption2}, ${messages[this.props.lang].name4}`,
       tags: [{
@@ -42,7 +42,7 @@ class GridGallery extends React.Component {
     {
       src: Slide3,
       thumbnail: Slide3,
-      thumbnailWidth: 542,
+      thumbnailWidth: 600,
       thumbnailHeight: 300,
       caption: `${messages[this.props.lang].caption3}, ${messages[this.props.lang].name6}`,
       tags: [{
@@ -53,7 +53,7 @@ class GridGallery extends React.Component {
     {
       src: Slide4,
       thumbnail: Slide4,
-      thumbnailWidth: 664,
+      thumbnailWidth: 600,
       thumbnailHeight: 300,
       caption: `${messages[this.props.lang].caption4}, ${messages[this.props.lang].name8}`,
       tags: [{
@@ -64,7 +64,7 @@ class GridGallery extends React.Component {
     {
       src: Slide5,
       thumbnail: Slide5,
-      thumbnailWidth: 671,
+      thumbnailWidth: 580,
       thumbnailHeight: 300,
       caption: `${messages[this.props.lang].caption5}, ${messages[this.props.lang].name2}`,
       tags: [{
@@ -75,7 +75,7 @@ class GridGallery extends React.Component {
     {
       src: Slide6,
       thumbnail: Slide6,
-      thumbnailWidth: 535,
+      thumbnailWidth: 620,
       thumbnailHeight: 300,
       caption: `${messages[this.props.lang].caption6}, ${messages[this.props.lang].name6}`,
       tags: [{

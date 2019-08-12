@@ -42,7 +42,7 @@ class PersonalPage extends Component {
   render() {
     return (
       <Layout>
-        <div className="personal-page">
+        <div className="personal-page" id="personal-page">
           <PersonalPageNavigation />
           <Avatar data={this.state.profile} />
           <Description data={this.state.profile} id="description" />

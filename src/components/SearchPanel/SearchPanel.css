@@ -99,3 +99,27 @@
     margin: 25px 0 10px;
   }
 }
+
+@media (max-width: 325px){
+  .search-panel {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    flex-direction: column;
+  }
+
+  .search-panel label {
+    text-align: left;
+  }
+
+  .search-input {
+    width: 220px;
+    margin: 10px 0;
+  }
+
+  .btn-search {
+    width: 284px;
+    padding: 10px 20px !important;
+    margin: 25px 0 10px !important;
+  }
+}

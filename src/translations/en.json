@@ -1,6 +1,6 @@
 {
-  "todayAuthor": "Photographer of the Day",
-  "welcome": "Welcome to the portal Photo.by,dedicated to photographers of Belarus. Here you can find information about the photographer  and be inspired by his work.",
+  "todayAuthor": "Photographer of\u00A0the\u00A0Day",
+  "welcome": "Welcome to the portal Photo.by, dedicated to photographers of Belarus. Here you can find information about the photographer  and be inspired by they works.",
   "purpose": "The portal was developed by students of Rolling Scopes School with the purpose of education about the culture of Belarus.",
   "developers": "Development team",
   "authorLifispan": "Years of life: ",
@@ -22,7 +22,7 @@
   "more": "to learn more",
   "listWork": "List of works",
   "dateCreate": "Date",
-  "workCreate": " Аchivment",
+  "workCreate": " Аchivement",
   "videoButton": "play another video",
   "toAuthorPage": "go to photographer's page",
   "noVideo": "There is no additional video for this photographer",

@@ -137,7 +137,7 @@ export default [
         date: '2011',
         place: 'Минск',
         description:
-          'Дебютировал как фотограф, презентовав фотавыставку «Under Ground»: в фотографиях сосредоточился на белорусских овощах, чтобы таким способом открыть более глубокое измерение белорусской культуры. Выбор своей тематики объяснил тем, что белорусы, как овощи, скрывают интересные вещи в себе, не показывают их вовне — нация заглубленных в себя людей: выглядят обычно, а внутри фантастические — под испачканной (от почвы) кожурой картофеля спрятано «золотое солнце».',
+          'Дебютировал как фотограф, презентовав фотавыставку «Under Ground»',
       },
       {
         date: '24.01.2018',
@@ -145,17 +145,17 @@ export default [
         description: 'Умер от инсульта в г.Минске.',
       },
     ],
-    works: [{ image: slide1, description: 'Работа выставки «Under Ground», 2011.  ' },
-    { image: slide2, description: 'Работа выставки «Under Ground», 2011' },
-    { image: slide3, description: 'Работа выставки «Under Ground», 2011' },
-    { image: slide4, description: 'Работа выставки «Under Ground», 2011' },
-    { image: slide5, description: 'Работа выставки «Under Ground», 2011' },
-    { image: slide6, description: 'Работа выставки «Under Ground», 2011' }],
+    works: [{ image: slide1, description: 'Работа выставки «Under Ground», 2011.' },
+      { image: slide2, description: 'Работа выставки «Under Ground», 2011' },
+      { image: slide3, description: 'Работа выставки «Under Ground», 2011' },
+      { image: slide4, description: 'Работа выставки «Under Ground», 2011' },
+      { image: slide5, description: 'Работа выставки «Under Ground», 2011' },
+      { image: slide6, description: 'Работа выставки «Under Ground», 2011' }],
     listOfWorks: [
       {
         year: '2011',
         work:
-          'Фотовыставка «Under Ground»',
+          'Фотовыставка «Under Ground»: в фотографиях сосредоточился на белорусских овощах. Выбор тематики объяснил тем, что белорусы, как овощи, скрывают интересные вещи в себе, не показывают их вовне — нация заглубленных в себя людей: выглядят обычно, а внутри фантастические — под испачканной (от почвы) кожурой картофеля спрятано «золотое солнце»',
       },
       {
         year: '2012',
@@ -211,11 +211,11 @@ export default [
       },
     ],
     works: [{ image: slide7, description: 'Прогулка' },
-    { image: slide8, description: 'Витебск.Вечер' },
-    { image: slide9, description: 'Сад Тюильри' },
-    { image: slide10, description: 'Монахи' },
-    { image: slide11, description: 'Париж: Avenue du Père Lachaise' },
-    { image: slide12, description: 'Вечер' }],
+      { image: slide8, description: 'Витебск.Вечер' },
+      { image: slide9, description: 'Сад Тюильри' },
+      { image: slide10, description: 'Монахи' },
+      { image: slide11, description: 'Париж: Avenue du Père Lachaise' },
+      { image: slide12, description: 'Вечер' }],
     listOfWorks: [
       {
         year: '1982-2005',
@@ -308,11 +308,11 @@ export default [
       },
     ],
     works: [{ image: slide34, description: 'На улице Вилейки' },
-    { image: slide35, description: 'Паводок на улице Пилсудского . 1930 г.' },
-    { image: slide36, description: 'Синагога' },
-    { image: slide37, description: 'Улица Пилсудского, 1930 гг.' },
-    { image: slide38, description: 'Часовня, 1930' },
-    { image: slide39, description: 'Фото из архива краеведческого музея' }],
+      { image: slide35, description: 'Паводок на улице Пилсудского . 1930 г.' },
+      { image: slide36, description: 'Синагога' },
+      { image: slide37, description: 'Улица Пилсудского, 1930 гг.' },
+      { image: slide38, description: 'Часовня, 1930' },
+      { image: slide39, description: 'Фото из архива краеведческого музея' }],
     listOfWorks: [
       {
         year: '1910—1912 ',
@@ -391,12 +391,17 @@ export default [
       },
     ],
     works: [{ image: slide13, description: 'Деревня' },
-    { image: slide14, description: 'Тихая обитель' },
-    { image: slide15, description: 'Детство' },
-    { image: slide16, description: 'Тишина' },
-    { image: slide17, description: 'Разруха' },
-    { image: slide18, description: 'Над вечным покоем' }],
-    listOfWorks: [      
+      { image: slide14, description: 'Тихая обитель' },
+      { image: slide15, description: 'Детство' },
+      { image: slide16, description: 'Тишина' },
+      { image: slide17, description: 'Разруха' },
+      { image: slide18, description: 'Над вечным покоем' }],
+    listOfWorks: [
+      {
+        year: '1997',
+        work:
+          '«Один в городе».  Музей Белорусской государственной академии искусств, Минск',
+      },
       {
         year: '1997',
         work:
@@ -448,8 +453,8 @@ export default [
     deathDate: '04.02.1950',
     deathPlace: 'Гижицко, Польша',
     locationsCoords: {
-      lat: '53.902496',
-      lng: '27.561481',
+      lat: '53.697079',
+      lng: '26.025061',
     },
     video: video7,
     videoSrc: videoSrc7,
@@ -503,11 +508,11 @@ export default [
     ],
 
     works: [{ image: slide40, description: 'Усадьба рода Булгаков в Добосне. Нач. ХХ века.' },
-    { image: slide41, description: 'Рыбацкие лодки на озере Нарочь. Нач. ХХ века.' },
-    { image: slide42, description: 'Зимнее утро. Нач. ХХ века.' },
-    { image: slide43, description: 'Костел в Ишкольди. Нач. ХХ века.' },
-    { image: slide44, description: 'Гродно. Нач. ХХ века.' },
-    { image: slide45, description: 'Дорога в окрестностях Порохонска. Нач. ХХ века.' },
+      { image: slide41, description: 'Рыбацкие лодки на озере Нарочь. Нач. ХХ века.' },
+      { image: slide42, description: 'Зимнее утро. Нач. ХХ века.' },
+      { image: slide43, description: 'Костел в Ишкольди. Нач. ХХ века.' },
+      { image: slide44, description: 'Гродно. Нач. ХХ века.' },
+      { image: slide45, description: 'Дорога в окрестностях Порохонска. Нач. ХХ века.' },
     ],
     listOfWorks: [
       {
@@ -596,11 +601,11 @@ export default [
       },
     ],
     works: [{ image: slide19, description: 'Фоторабота выставки «Свет и тень» ' },
-    { image: slide20, description: 'Фоторабота выставки «Свет и тень» ' },
-    { image: slide21, description: 'Фоторабота выставки «Свет и тень» ' },
-    { image: slide22, description: 'Фоторабота выставки «Свет и тень» ' },
-    { image: slide23, description: 'Фоторабота выставки «Свет и тень» ' },
-    { image: slide24, description: 'Фоторабота выставки «Свет и тень» ' }],
+      { image: slide20, description: 'Фоторабота выставки «Свет и тень» ' },
+      { image: slide21, description: 'Фоторабота выставки «Свет и тень» ' },
+      { image: slide22, description: 'Фоторабота выставки «Свет и тень» ' },
+      { image: slide23, description: 'Фоторабота выставки «Свет и тень» ' },
+      { image: slide24, description: 'Фоторабота выставки «Свет и тень» ' }],
     listOfWorks: [
       {
         year: '1924',
@@ -686,14 +691,14 @@ export default [
       },
     ],
     works: [{ image: slide25, description: 'Национальная библиотека Беларуси' },
-    { image: slide26, description: 'Минск. Красный костёл' },
-    { image: slide27, description: 'В двух измерениях' },
-    { image: slide28, description: 'Минск. Площадь Независимости' },
-    { image: slide29, description: 'Национальная библиотека Беларуси' },
-    { image: slide30, description: 'Минск. Маленькая церквушка' },
-    { image: slide31, description: 'Минск.Оперный театр' },
-    { image: slide32, description: 'Немига. Свислочь' },
-    { image: slide33, description: 'Вокзальная площадь' }],
+      { image: slide26, description: 'Минск. Красный костёл' },
+      { image: slide27, description: 'В двух измерениях' },
+      { image: slide28, description: 'Минск. Площадь Независимости' },
+      { image: slide29, description: 'Национальная библиотека Беларуси' },
+      { image: slide30, description: 'Минск. Маленькая церквушка' },
+      { image: slide31, description: 'Минск.Оперный театр' },
+      { image: slide32, description: 'Немига. Свислочь' },
+      { image: slide33, description: 'Вокзальная площадь' }],
     listOfWorks: [
       {
         year: '2000',
@@ -716,7 +721,7 @@ export default [
     name: 'Михаил Маркович Шмерлинг',
     avatar: avatar8,
     occupation:
-      'Белорусский фотохудожник, член Союза журналистов Беларуси, обладатель премии на Всесоюзной выставке «Фотографика-71», лауреата международной выставки «Человек и Земля».',
+      'Белорусский фотохудожник, член Союза журналистов Беларуси, обладатель премии на Всесоюзной выставке «Фотографика-71», лауреат международной выставки «Человек и Земля».',
     birthDate: '07.12.1946',
     birthPlace: 'г.Витебск',
     deathDate: null,
@@ -758,11 +763,11 @@ export default [
     ],
 
     works: [{ image: slide46, description: '«Индюки», 1972' },
-    { image: slide47, description: 'Фотография без названия' },
-    { image: slide48, description: '«Это я, господи»' },
-    { image: slide49, description: 'Григорий Бородулин' },
-    { image: slide50, description: '«Это я, господи»' },
-    { image: slide51, description: 'Пауки' }],
+      { image: slide47, description: 'Фотография без названия' },
+      { image: slide48, description: '«Это я, господи»' },
+      { image: slide49, description: 'Григорий Бородулин' },
+      { image: slide50, description: '«Это я, господи»' },
+      { image: slide51, description: 'Пауки' }],
     listOfWorks: [
       {
         year: '1971-1975',

@@ -136,7 +136,7 @@ export default [
         date: '2011',
         place: 'Мінск',
         description:
-          'Дэбютаваў як фатограф, прэзэнтаваўшы фотавыставку «Under Ground»: у фотаздымках засяродзіўся на беларускіх гародніне, каб такім спосабам адкрыць больш глыбокае вымярэнне беларускай культуры. Выбар сваёй тэматыкі патлумачыў тым, што беларусы, як гародніна, хаваюць цікавыя рэчы ў сабе, не паказваюць іх вонкі - нацыя заглыбленых у сябе людзей: выглядаюць звычайна, а ўнутры фантастычныя - пад запэцканай (ад глебы) лупінай бульбы схавана «залатое сонца».',
+          'Дэбютаваў як фатограф, прэзэнтаваўшы фотавыставку «Under Ground»',
       },
       {
         date: '24.01.2018',
@@ -145,16 +145,16 @@ export default [
       },
     ],
     works: [{ image: slide1, description: 'Праца выставы «Under Ground», 2011.' },
-    { image: slide2, description: 'Праца выставы «Under Ground», 2011' },
-    { image: slide3, description: 'Праца выставы «Under Ground», 2011' },
-    { image: slide4, description: 'Праца выставы «Under Ground», 2011' },
-    { image: slide5, description: 'Праца выставы «Under Ground», 2011' },
-    { image: slide6, description: 'Праца выставы «Under Ground», 2011' }],
+      { image: slide2, description: 'Праца выставы «Under Ground», 2011' },
+      { image: slide3, description: 'Праца выставы «Under Ground», 2011' },
+      { image: slide4, description: 'Праца выставы «Under Ground», 2011' },
+      { image: slide5, description: 'Праца выставы «Under Ground», 2011' },
+      { image: slide6, description: 'Праца выставы «Under Ground», 2011' }],
     listOfWorks: [
       {
         year: '2011',
         work:
-          'Фотавыстава «Under Ground»',
+          'Фотавыстава «Under Ground»: у фотаздымках засяродзіўся на беларускіх гародніне. Выбар тэматыкі патлумачыў тым, што беларусы, як гародніна, хаваюць цікавыя рэчы ў сабе, не паказваюць іх вонкі - нацыя заглыбленых у сябе людзей: выглядаюць звычайна, а ўнутры фантастычныя - пад запэцканай (ад глебы) лупінай бульбы схавана «залатое сонца»',
       },
       {
         year: '2012',
@@ -210,11 +210,11 @@ export default [
       },
     ],
     works: [{ image: slide7, description: 'Шпацыр' },
-    { image: slide8, description: 'Віцебск.Вечар' },
-    { image: slide9, description: 'Сад Цюільры' },
-    { image: slide10, description: 'Манахі' },
-    { image: slide11, description: 'Парыж: Avenue du Père Lachaise ' },
-    { image: slide12, description: 'Вечар' }],
+      { image: slide8, description: 'Віцебск.Вечар' },
+      { image: slide9, description: 'Сад Цюільры' },
+      { image: slide10, description: 'Манахі' },
+      { image: slide11, description: 'Парыж: Avenue du Père Lachaise ' },
+      { image: slide12, description: 'Вечар' }],
     listOfWorks: [
       {
         year: '1982-2005',
@@ -307,11 +307,11 @@ export default [
       },
     ],
     works: [{ image: slide34, description: 'На вуліцы Вілейкі' },
-    { image: slide35, description: 'Паводка на вуліцы Пілсудскага. 1930 г.' },
-    { image: slide36, description: 'Сінагога' },
-    { image: slide37, description: 'Вуліца Пілсудскага, 1930 гг.' },
-    { image: slide38, description: 'Каплічка, 1930-я гг.' },
-    { image: slide39, description: 'Фота з архіва краязнаўчага музея' }],
+      { image: slide35, description: 'Паводка на вуліцы Пілсудскага. 1930 г.' },
+      { image: slide36, description: 'Сінагога' },
+      { image: slide37, description: 'Вуліца Пілсудскага, 1930 гг.' },
+      { image: slide38, description: 'Каплічка, 1930-я гг.' },
+      { image: slide39, description: 'Фота з архіва краязнаўчага музея' }],
     listOfWorks: [
       {
         year: '1910—1912 ',
@@ -390,12 +390,17 @@ export default [
       },
     ],
     works: [{ image: slide13, description: 'Вёска' },
-    { image: slide14, description: 'Ціхая мясціна' },
-    { image: slide15, description: 'Дзяцінства' },
-    { image: slide16, description: 'Цішыня' },
-    { image: slide17, description: 'Разруха' },
-    { image: slide18, description: 'Над вечным спакоем' }],
+      { image: slide14, description: 'Ціхая мясціна' },
+      { image: slide15, description: 'Дзяцінства' },
+      { image: slide16, description: 'Цішыня' },
+      { image: slide17, description: 'Разруха' },
+      { image: slide18, description: 'Над вечным спакоем' }],
     listOfWorks: [
+      {
+        year: '1997',
+        work:
+          '«Адзін у горадзе». Музей Беларускай дзяржаўнай акадэміі мастацтваў, Мінск',
+      },
       {
         year: '1997',
         work:
@@ -441,8 +446,8 @@ export default [
     deathDate: '04.02.1950',
     deathPlace: 'Гіжыцко, Польшча',
     locationsCoords: {
-      lat: '53.902496',
-      lng: '27.561481',
+      lat: '53.697079',
+      lng: '26.025061',
     },
     video: video7,
     videoSrc: videoSrc7,
@@ -496,11 +501,11 @@ export default [
     ],
 
     works: [{ image: slide40, description: 'Сядзіба роду Булгакаў у Дабосне. Пач. ХХ стагоддзя.' },
-    { image: slide41, description: 'Рыбацкія лодкі на возеры Нарач. Пач. ХХ стагоддзя.' },
-    { image: slide42, description: 'Зімовая раніца. Пач. ХХ стагоддзя.' },
-    { image: slide43, description: 'Касцёл у Ішкалдзі. Пач. ХХ стагоддзя.' },
-    { image: slide44, description: 'Гродна. Пач. ХХ стагоддзя.' },
-    { image: slide45, description: 'Дарога ў ваколіцах Порохонска. Пач. ХХ стагоддзя.' }],
+      { image: slide41, description: 'Рыбацкія лодкі на возеры Нарач. Пач. ХХ стагоддзя.' },
+      { image: slide42, description: 'Зімовая раніца. Пач. ХХ стагоддзя.' },
+      { image: slide43, description: 'Касцёл у Ішкалдзі. Пач. ХХ стагоддзя.' },
+      { image: slide44, description: 'Гродна. Пач. ХХ стагоддзя.' },
+      { image: slide45, description: 'Дарога ў ваколіцах Порохонска. Пач. ХХ стагоддзя.' }],
     listOfWorks: [
       {
         year: '1931',
@@ -587,11 +592,11 @@ export default [
       },
     ],
     works: [{ image: slide19, description: 'Фотапраца з выставы «Святло і цень»' },
-    { image: slide20, description: 'Фотапраца з выставы «Святло і цень»' },
-    { image: slide21, description: 'Фотапраца з выставы «Святло і цень»' },
-    { image: slide22, description: 'Фотапраца з выставы «Святло і цень»' },
-    { image: slide23, description: 'Фотапраца з выставы «Святло і цень»' },
-    { image: slide24, description: 'Фотапраца з выставы «Святло і цень»' }],
+      { image: slide20, description: 'Фотапраца з выставы «Святло і цень»' },
+      { image: slide21, description: 'Фотапраца з выставы «Святло і цень»' },
+      { image: slide22, description: 'Фотапраца з выставы «Святло і цень»' },
+      { image: slide23, description: 'Фотапраца з выставы «Святло і цень»' },
+      { image: slide24, description: 'Фотапраца з выставы «Святло і цень»' }],
     listOfWorks: [
       {
         year: '1924',
@@ -677,14 +682,14 @@ export default [
       },
     ],
     works: [{ image: slide25, description: 'Нацыянальная бібліятэка Беларусі' },
-    { image: slide26, description: 'Менск. чырвоны касцёл' },
-    { image: slide27, description: 'У двух вымярэннях' },
-    { image: slide28, description: 'Менск. Плошча Незалежнасці' },
-    { image: slide29, description: 'Нацыянальная бібліятэка Беларусі' },
-    { image: slide30, description: 'Менск. Маленькая цэркаўка' },
-    { image: slide31, description: 'Менск. Оперны тэатр' },
-    { image: slide32, description: 'Няміга. Свіслач' },
-    { image: slide33, description: 'Вакзальная плошча' }],
+      { image: slide26, description: 'Менск. чырвоны касцёл' },
+      { image: slide27, description: 'У двух вымярэннях' },
+      { image: slide28, description: 'Менск. Плошча Незалежнасці' },
+      { image: slide29, description: 'Нацыянальная бібліятэка Беларусі' },
+      { image: slide30, description: 'Менск. Маленькая цэркаўка' },
+      { image: slide31, description: 'Менск. Оперны тэатр' },
+      { image: slide32, description: 'Няміга. Свіслач' },
+      { image: slide33, description: 'Вакзальная плошча' }],
     listOfWorks: [
       {
         year: '2000',
@@ -734,7 +739,7 @@ export default [
         date: '1969-1983',
         place: 'Віцебск',
         description:
-          'Працаваў у Віцебскім абласным краязнаўчым музеі. Атрымаў першую прэмію на Усесаюзнай выставе «Фатаграфіка-71» медаль лаўрэата на міжнароднай выставе "Чалавек і Зямля». Узнагароджаны ганаровымі дыпломамі фотосалонов ў Румыніі, Англіі.',
+          'Працаваў у Віцебскім абласным краязнаўчым музеі. Атрымаў першую прэмію на Усесаюзнай выставе «Фатаграфіка-71» медаль лаўрэата на міжнароднай выставе "Чалавек і Зямля».',
       },
       {
         date: '1986-1991',
@@ -749,11 +754,11 @@ export default [
     ],
 
     works: [{ image: slide46, description: '«Індыкі», 1972' },
-    { image: slide47, description: 'Фотаздымак без назвы' },
-    { image: slide48, description: '«Гэта я, божа»' },
-    { image: slide49, description: 'Рыгор Барадулін' },
-    { image: slide50, description: '«Гэта я, божа»' },
-    { image: slide51, description: 'Павукі' }],
+      { image: slide47, description: 'Фотаздымак без назвы' },
+      { image: slide48, description: '«Гэта я, божа»' },
+      { image: slide49, description: 'Рыгор Барадулін' },
+      { image: slide50, description: '«Гэта я, божа»' },
+      { image: slide51, description: 'Павукі' }],
     listOfWorks: [
       {
         year: '1971-1975',

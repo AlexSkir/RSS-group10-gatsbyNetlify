@@ -10,7 +10,9 @@ import SimpleSlider from '../components/Slider/Slider';
 import Avatar from '../components/Avatar/Avatar';
 import Description from '../components/Description/Description';
 import Developer from '../components/Developer/Developer';
+import Developers from '../components/Developers/Developers';
 import MainPageNavigation from '../components/MainPageNavigation/MainPageNavigation';
+import MainPageSliderNavigation from '../components/MainPageSliderNavigation/MainPageSliderNavigation';
 import GridGallery from '../components/GridGalery/GridGalery';
 import avatarVitalyMikulich from '../img/developers/VitalyMikulich.jpg';
 import avatarPetriken from '../img/developers/petriken.jpg';
@@ -44,118 +46,70 @@ class MainPage extends Component {
 
   onChange(event) {
     const day = event.target.value.split('-')[2] % 8;
-    console.log(day)
-    this.setState({ day, authorDay: day, profile: this.data[day] });
+    if(day) {
+      this.setState({ day, authorDay: day, profile: this.data[day] });
+    }
   }
 
   render() {
     return (
       <Layout>
-        <Grid>
-          <Grid className="main-page" id="home">
-            <Grid className="main-page-title">
-              <p>
-                <span className="portal">
-                  <FormattedMessage id="headerSubtitleSpan" />
-                </span>
-                <span>
-                  <FormattedMessage id="headerSubtitle" />
-                </span>
-              </p>
-              <Grid className="mainpage-navigation-container">
-                <AnchorLink offset="40px" href="#author">
-                  <FormattedMessage id="todayAuthor" />
-                </AnchorLink>
-                <AnchorLink offset="40px" href="#project-info">
-                  <FormattedMessage id="infoAboutPortal" />
-                </AnchorLink>
-                <AnchorLink offset="0px" href="#developers">
-                  <FormattedMessage id="developers" />
-                </AnchorLink>
-              </Grid>
-            </Grid>
-            <SimpleSlider />
-            <MainPageNavigation />
-            <section className="author-day" id="author">
-              <h2 className="title-author-day">
-                <FormattedMessage id="todayAuthor" />
-              </h2>
-              <Grid className="avatar-description">
-                <div className="datepicker-container">
-                  <Avatar data={this.state.profile} />
-                  <DatePickers onChange={e => this.onChange(e)} />
-                </div>
-                <Grid>
-                  <Description data={this.state.profile} />
-                  <Grid
-                    container
-                    direction="row"
-                    justify="flex-start"
-                    alignItems="center"
-                    className="author-day-button"
-                  >
-                    <Button variant="contained" className="author-day__btn">
-                      <FormattedMessage id="toAuthorPage">
-                        {text => (
-                          <Link
-                            to={`/photographers/person${this.state.authorDay}`}
-                            className="author-day__btn-text"
-                            id={this.state.authorDay}
-                            onClick={(e) => {
-                              store.dispatch({ type: 'person', value: this.state.authorDay });
-                            }}
-                          >
-                            {text}
-                          </Link>
-                        )}
-                      </FormattedMessage>
-                    </Button>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </section>
-            <section className="description-mainpage" id="project-info">
-              <h2>
-                <FormattedMessage id="infoAboutPortal" />
-              </h2>
-              <FormattedHTMLMessage id="welcome" />
-              <GridGallery data={this.state.profile} />
-            </section>
-          </Grid>
-          <Grid className="developers-container" id="developers">
-            <h2>
-              <FormattedMessage id="developers" />
+        <div className="main-page" id="home">
+
+          <section className="main-page-title">
+            <p>
+              <span className="portal">
+                <FormattedMessage id="headerSubtitleSpan" />
+              </span>
+              <span className="portal-subtitle">
+                <FormattedMessage id="headerSubtitle" />
+              </span>
+            </p>
+            <MainPageSliderNavigation/>
+          </section>
+          <SimpleSlider/>
+          <MainPageNavigation />
+      
+          <section className="author-day" id="author">
+            <h2 className="title-author-day">
+              <FormattedMessage id="todayAuthor" />
             </h2>
-            <FormattedMessage id="purpose" />
-            <Grid className="developers">
-              <Developer
-                name="Vitaly Mikulich"
-                gitHub="VitalyMikulich"
-                avatar={avatarVitalyMikulich}
-              />
-              <Developer
-                name="Piotr Stashukevich"
-                gitHub="petriken"
-                avatar={avatarPetriken}
-              />
-              <Developer
-                name="Irina Inina"
-                gitHub="irinainina"
-                avatar={avatarIrinainina}
-              />
-              <Developer
-                name="Aleksandra Skirnevskaia"
-                gitHub="AlexSkir"
-                avatar={avatarAlexSkir}
-              />
-              <Developer
-                name="Yuliya Pakidzka"
-                gitHub="Julanick"
-                avatar={avatarJulanick}
-              />
-            </Grid>
-          </Grid>
-        </Grid>
+            <div className="avatar-description">
+              <div className="datepicker-container">
+                <Avatar data={this.state.profile} />
+                <DatePickers onChange={e => this.onChange(e)} />
+              </div>
+              <div className="description-button">
+                <Description data={this.state.profile} />
+                <Button variant="contained" className="author-day-btn">
+                  <FormattedMessage id="toAuthorPage">
+                    {text => (
+                      <Link
+                        to={`/photographers/person${this.state.authorDay}`}
+                        className="author-day-btn-text"
+                        id={this.state.authorDay}
+                        onClick={(e) => {
+                          store.dispatch({ type: 'person', value: this.state.authorDay });
+                        }}
+                      >
+                        {text}
+                      </Link>
+                    )}
+                  </FormattedMessage>
+                </Button>
+              </div>
+            </div>
+          </section>
+
+          <section className="description-mainpage" id="project-info">
+            <h2>
+              <FormattedMessage id="infoAboutPortal" />
+            </h2>
+            <FormattedHTMLMessage id="welcome" />
+            <GridGallery />
+          </section>
+        </div>
+        <Developers/>
       </Layout>
     )
   }

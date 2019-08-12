@@ -7,7 +7,7 @@ function TimeLine(props) {
   return (
     <div id="timeline">
       <h2 style={{
-        textAlign: 'center', fontSize: '44px', marginTop: 60,
+        textAlign: 'center', fontSize: '44px', marginTop: 40,
       }}>
         <FormattedMessage id="biography" />
       </h2>
